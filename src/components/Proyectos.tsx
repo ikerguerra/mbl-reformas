@@ -60,54 +60,20 @@ export default function Proyectos() {
                         }
                     </div>
                     <div className="row isotope-container">
-                        <div className="col-lg-4 col-md-6 item cocina">
-                            <div className="image-holder mx-auto zoom-effect">
-                                <Link href="project-single.html"> <Image src="/assets/cocina.jpeg" className="reveal-curve-top" alt="building" width={400} height={500} /> </Link>
-                            </div>
-                            <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
-                                <Link href="project-single.html">Outbox creatives building</Link>
-                            </h3>
-                        </div>
-                        <div className="col-lg-4 col-md-6 item banio">
-                            <div className="image-holder mx-auto zoom-effect">
-                                <Link href="project-single.html"> <Image src="/assets/banio-vater-elevado.jpeg" className="reveal-curve-top" alt="building" width={400} height={500} /> </Link>
-                            </div>
-                            <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
-                                <Link href="project-single.html">Outbox creatives building</Link>
-                            </h3>
-                        </div>
-                        <div className="col-lg-4 col-md-6 item cocina">
-                            <div className="image-holder mx-auto zoom-effect">
-                                <Link href="project-single.html"> <Image src="/assets/cocina-hall.jpeg" className="reveal-curve-top" alt="building" width={400} height={500} /> </Link>
-                            </div>
-                            <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
-                                <Link href="project-single.html">Outbox creatives building</Link>
-                            </h3>
-                        </div>
-                        <div className="col-lg-4 col-md-6 item banio">
-                            <div className="image-holder mx-auto zoom-effect">
-                                <Link href="project-single.html"> <Image src="/assets/banio.jpeg" className="reveal-curve-top" alt="building" width={400} height={500} /> </Link>
-                            </div>
-                            <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
-                                <Link href="project-single.html">Outbox creatives building</Link>
-                            </h3>
-                        </div>
-                        <div className="col-lg-4 col-md-6 item banio">
-                            <div className="image-holder mx-auto zoom-effect">
-                                <Link href="project-single.html"> <Image src="/assets/ducha-mampara.jpeg" className="reveal-curve-top" alt="building" width={400} height={500} /> </Link>
-                            </div>
-                            <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
-                                <Link href="project-single.html">Outbox creatives building</Link>
-                            </h3>
-                        </div>
-                        <div className="col-lg-4 col-md-6 item interior">
-                            <div className="image-holder mx-auto zoom-effect">
-                                <Link href="project-single.html"> <Image src="/assets/hall.jpeg" className="reveal-curve-top" alt="building" width={400} height={500} /> </Link>
-                            </div>
-                            <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
-                                <Link href="project-single.html">Outbox creatives building</Link>
-                            </h3>
-                        </div>
+                        {
+                            proyectos.map((proyecto) => (
+                                <div className={`col-lg-4 col-md-6 item ${proyecto.category}`} key={proyecto.id}>
+                                    <div className="image-holder mx-auto zoom-effect">
+                                        <Link href="project-single.html">
+                                            <Image src={proyecto.image} className="reveal-curve-top" alt={proyecto.title} width={400} height={500} />
+                                        </Link>
+                                    </div>
+                                    <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
+                                        <Link href="project-single.html">{proyecto.title}</Link>
+                                    </h3>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

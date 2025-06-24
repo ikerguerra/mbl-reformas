@@ -1,4 +1,3 @@
-import SobreNosotros from "@/components/Nosotros";
 import Link from "next/link";
 
 export default function NosotrosPage() {
@@ -50,8 +49,6 @@ export default function NosotrosPage() {
                     </div>
                 </div>
             </section>
-
-            {/* <SobreNosotros /> */}
         </>
     )
 }

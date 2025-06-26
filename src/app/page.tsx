@@ -3,6 +3,7 @@ import Proyectos from "@/components/Proyectos";
 import SobreNosotros from "@/components/Nosotros";
 import Image from "next/image";
 import Link from "next/link";
+import TrustindexWidget from "@/components/TrustindexWidget";
 
 export default function Home() {
 
@@ -24,6 +25,8 @@ export default function Home() {
       </section>
 
       <AutoCounter />
+
+      <TrustindexWidget />
 
       <Proyectos />
 

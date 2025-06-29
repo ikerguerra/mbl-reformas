@@ -10,7 +10,7 @@ export default function ContactoPage() {
                         <div className="banner-content my-5 py-5">
                             <h1 className="banner-title light text-uppercase fw-bold">Contacto</h1>
                             <nav className="breadcrumb mt-3 ">
-                                <span className="breadcrumb-item text-white" aria-current="page">Home</span>
+                                <span className="breadcrumb-item text-white" aria-current="page">Inicio</span>
                                 <span className="breadcrumb-item active text-white" aria-current="page">/ Contacto</span>
                             </nav>
                         </div>

@@ -1,3 +1,6 @@
+import AutoCounter from "@/components/AutoCounter";
+import Contacto from "@/components/Contacto";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function NosotrosPage() {
@@ -19,36 +22,35 @@ export default function NosotrosPage() {
                 </div>
             </section>
 
-            <section id="about-us" className="mt-5 pt-5">
-
+            <section id="about-us" className="my-5 py-5">
                 <div className="vertical-element aos-init aos-animate" data-aos="fade-up">
                     <div className="container">
                         <div className="row d-flex align-items-center">
                             <div className="col-md-5">
                                 <div className="image-holder">
-                                    {/* <img src="images/post-item1.jpg" alt="about-us" className="img-fluid"> */}
+                                    <Image src="/assets/projects-item1.jpg" alt="banner" className="img-fluid" width={410} height={370} />
                                 </div>
                             </div>
                             <div className="col-md-7">
                                 <div className="section-element ps-0 p-5">
                                     <div className="section-header text-uppercase mb-4">
-                                        <h2 className="left-pattern">About Us</h2>
-                                        <h3>Who are we?</h3>
+                                        <h2 className="left-pattern">Sobre nosotros</h2>
+                                        <h3>¿Quiénes somos?</h3>
                                     </div>
 
-                                    <p>The beginning of our journey vel tellus Turpis purus, gravida orci, fringilla a. Ac
-                                        sed
-                                        eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit
-                                        libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis
-                                        donec dolor id in. Pulvinar commodo mollis diam sed facilisis at magna imperdiet
-                                        cursus
-                                        ac faucibus sit libero.</p>
+                                    <p>Somos una empresa de construcción, refomas y rehabilitación con más de 20 años de experiencia en el sector. Nos especializamos en ofrecer 
+                                        servicios de alta calidad, adaptados a las necesidades de nuestros clientes, siempre priorizando la sostenibilidad y el compromiso con el 
+                                        medio ambiente.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <AutoCounter />
+
+            <Contacto />
         </>
     )
 }

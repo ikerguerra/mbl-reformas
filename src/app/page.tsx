@@ -1,10 +1,21 @@
+'use client';
+
 import AutoCounter from "@/components/AutoCounter";
 import Proyectos from "@/components/Proyectos";
 import SobreNosotros from "@/components/Nosotros";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2500
+    });
+  }, []);
 
   return (
     <div className="overflow-hidden">
@@ -14,7 +25,7 @@ export default function Home() {
           <Image src="/assets/23773.jpg" alt="banner" className="banner-image" width={1920} height={1080} />
         </div>
         <div className="container-lg">
-          <div className="banner-content position-absolute aos-init aos-animate" data-aos="fade-up">
+          <div className="banner-content position-absolute" data-aos="fade-up">
             <h1 className="banner-title light text-uppercase fw-bold">CALIDAD, SOSTENIBILIDAD Y COMPROMISO</h1>
             <Link href="/nuestros-proyectos" className="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">
               <span>Nuestros proyectos</span>

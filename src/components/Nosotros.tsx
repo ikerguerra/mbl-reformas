@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Nosotros() {
     return (
         <section id="about" className="padding-large bg-gray-200">
-            <div className="container aos-init aos-animate" data-aos="fade-up">
+            <div className="container" data-aos="fade-up">
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="section-header">

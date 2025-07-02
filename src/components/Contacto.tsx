@@ -7,7 +7,7 @@ export default function Contacto() {
     return (
         <>
             <section className="contact-us-wrap py-5 mt-5">
-                <div className="container aos-init aos-animate" data-aos="fade-up">
+                <div className="container" data-aos="fade-up">
                     <div className="row">
                         <div className="contact-info col-md-6">
                             <h3>Información de contacto</h3>

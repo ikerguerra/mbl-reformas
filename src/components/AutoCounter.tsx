@@ -1,7 +1,7 @@
 export default function AutoCounter() {
   return (
     <section id="our-achievement" className="padding-large bg-gray-200">
-      <div className="container aos-init aos-animate" data-aos="fade-up">
+      <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="counter-info text-center flex align-items-end">

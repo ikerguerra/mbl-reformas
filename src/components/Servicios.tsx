@@ -1,5 +1,5 @@
 
-import { faHouse, faPaintRoller, faShop, faToilet, faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faPaintRoller, faShop, faSink, faToilet } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -21,7 +21,7 @@ export default function Servicios() {
         {
             title: "Cocinas",
             description: "Cocinas a medida, prácticas y adaptadas a tu estilo.",
-            icon: faUtensils,
+            icon: faSink,
             link: "/cocinas"
         },
         {

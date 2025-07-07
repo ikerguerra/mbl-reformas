@@ -63,7 +63,7 @@ export default function Header() {
                                         data-bs-toggle="dropdown" href="#" role="button"
                                         aria-expanded="false">Servicios</Link>
                                     <ul className="dropdown-menu">
-                                        <li><Link href="blog.html" className="dropdown-item text-uppercase ">Integrales</Link>
+                                        <li><Link href="/reformas-integrales" className="dropdown-item text-uppercase ">Integrales</Link>
                                         </li>
                                         <li><Link href="blog.html" className="dropdown-item text-uppercase ">Baños</Link></li>
                                         <li><Link href="blog.html" className="dropdown-item text-uppercase ">Cocinas</Link></li>

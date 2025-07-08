@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
 
@@ -61,12 +62,12 @@ export default function Header() {
                                 <li className="nav-item dropdown me-5">
                                     <Link className="nav-link text-uppercase dropdown-toggle py-0 pe-0 "
                                         data-bs-toggle="dropdown" href="#" role="button"
-                                        aria-expanded="false">Servicios</Link>
+                                        aria-expanded="false">Servicios<FontAwesomeIcon icon={faAngleDown} className="mx-1"/></Link>
                                     <ul className="dropdown-menu">
-                                        <li><Link href="/reformas-integrales" className="dropdown-item text-uppercase ">Integrales</Link>
-                                        </li>
+                                        <li><Link href="/reformas-integrales" className="dropdown-item text-uppercase ">Integrales</Link></li>
                                         <li><Link href="blog.html" className="dropdown-item text-uppercase ">Baños</Link></li>
                                         <li><Link href="blog.html" className="dropdown-item text-uppercase ">Cocinas</Link></li>
+                                        <li><Link href="/servicios" className="dropdown-item text-uppercase ">Todos los servicios</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item me-5">

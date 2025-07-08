@@ -34,7 +34,7 @@ export default function Header() {
     }, [scrollTop])
 
     // Función para manejar el cierre del offcanvas al hacer clic en un enlace
-    const handleLinkClick = useCallback((e?: React.MouseEvent<HTMLAnchorElement>) => {
+    const handleLinkClick = useCallback(() => {
         const offcanvasEl = document.getElementById("bdNavbar");
 
         if (offcanvasEl) {

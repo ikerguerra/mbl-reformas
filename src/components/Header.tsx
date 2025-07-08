@@ -3,8 +3,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { useCallback, useEffect, useState } from "react";
+import { faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
 
@@ -33,6 +33,16 @@ export default function Header() {
 
     }, [scrollTop])
 
+    // Función para manejar el cierre del offcanvas al hacer clic en un enlace
+    const handleLinkClick = useCallback((e?: React.MouseEvent<HTMLAnchorElement>) => {
+        const offcanvasEl = document.getElementById("bdNavbar");
+
+        if (offcanvasEl) {
+            const bsOffcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasEl);
+            if (bsOffcanvas) bsOffcanvas.hide();
+        }
+    }, []);
+
     return (
         <header id="header" className="site-header position-absolute">
             <nav id="header-nav" className={`navbar navbar-expand-lg p-3 container-fluid position-fixed smart-scroll ${isScrolling} ${isScrollingUp}`}>
@@ -43,9 +53,7 @@ export default function Header() {
                     <button className="navbar-toggler d-flex d-lg-none order-3 p-2 shadow-none" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <svg className="navbar-icon">
-                            {/* <use xlink:href="#navbar-icon"></use> */}
-                        </svg>
+                        <FontAwesomeIcon icon={faBars} className="text-white" size="xl" />
                     </button>
                     <div className="offcanvas offcanvas-end" tabIndex={-1} id="bdNavbar"
                         aria-labelledby="bdNavbarOffcanvasLabel">
@@ -57,27 +65,35 @@ export default function Header() {
                             <ul id="navbar"
                                 className="navbar-nav text-uppercase justify-content-lg-center justify-content-md-end align-items-center flex-grow-1  text-hover">
                                 <li className="nav-item me-5">
-                                    <Link className="nav-link light text-uppercase p-0" href="/">Inicio</Link>
+                                    <Link className="nav-link light text-uppercase p-0" href="/" onClick={handleLinkClick}>Inicio</Link>
                                 </li>
                                 <li className="nav-item dropdown me-5">
                                     <Link className="nav-link text-uppercase dropdown-toggle py-0 pe-0 "
                                         data-bs-toggle="dropdown" href="#" role="button"
                                         aria-expanded="false">Servicios<FontAwesomeIcon icon={faAngleDown} className="mx-1"/></Link>
                                     <ul className="dropdown-menu">
-                                        <li><Link href="/reformas-integrales" className="dropdown-item text-uppercase ">Integrales</Link></li>
-                                        <li><Link href="blog.html" className="dropdown-item text-uppercase ">Baños</Link></li>
-                                        <li><Link href="blog.html" className="dropdown-item text-uppercase ">Cocinas</Link></li>
-                                        <li><Link href="/servicios" className="dropdown-item text-uppercase ">Todos los servicios</Link></li>
+                                        <li>
+                                            <Link href="/reformas-integrales" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Integrales</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="blog.html" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Baños</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="blog.html" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Cocinas</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/servicios" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Todos los servicios</Link>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li className="nav-item me-5">
-                                    <Link className="nav-link light text-uppercase p-0" href="/nuestros-proyectos">Proyectos</Link>
+                                    <Link className="nav-link light text-uppercase p-0" href="/nuestros-proyectos" onClick={handleLinkClick}>Proyectos</Link>
                                 </li>
                                 <li className="nav-item me-5">
-                                    <Link className="nav-link light text-uppercase p-0" href="/nosotros">Nosotros</Link>
+                                    <Link className="nav-link light text-uppercase p-0" href="/nosotros" onClick={handleLinkClick}>Nosotros</Link>
                                 </li>
                                 <li className="nav-item me-5">
-                                    <Link className="nav-link light text-uppercase p-0" href="/contacto">Contacto</Link>
+                                    <Link className="nav-link light text-uppercase p-0" href="/contacto" onClick={handleLinkClick}>Contacto</Link>
                                 </li>
                             </ul>
                             <div className="social-links d-flex mt-5 mt-lg-0 align-items-center justify-content-end">

@@ -5,7 +5,6 @@ import { faFacebook, faInstagram, faTwitter, faLinkedin, faYoutube } from "@fort
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Offcanvas } from "bootstrap";
 
 export default function Header() {
 
@@ -39,7 +38,7 @@ export default function Header() {
         const offcanvasEl = document.getElementById("bdNavbar");
 
         if (offcanvasEl) {
-            const bsOffcanvas = Offcanvas.getInstance(offcanvasEl);
+            const bsOffcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasEl);
             if (bsOffcanvas) bsOffcanvas.hide();
         }
     }, []);

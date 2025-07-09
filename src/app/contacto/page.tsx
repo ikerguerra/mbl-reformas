@@ -2,7 +2,7 @@ import Contacto from "@/components/Contacto";
 
 export default function ContactoPage() {
     return (
-        <>
+        <div className="overflow-hidden">
             <section id="intro" style={{ backgroundImage: "url('/assets/banner-item1.jpg')" }}>
                 <div className="overlay"></div>
                 <div className="container pt-5" data-aos="fade-up">
@@ -19,6 +19,6 @@ export default function ContactoPage() {
             </section>
 
             <Contacto />
-        </>
+        </div>
     );
 }

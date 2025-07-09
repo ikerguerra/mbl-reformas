@@ -76,7 +76,7 @@ export default function Header() {
                                             <Link href="/reformas-integrales" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Integrales</Link>
                                         </li>
                                         <li>
-                                            <Link href="blog.html" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Baños</Link>
+                                            <Link href="/reformas-banos" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Baños</Link>
                                         </li>
                                         <li>
                                             <Link href="blog.html" className="dropdown-item text-uppercase " onClick={handleLinkClick}>Cocinas</Link>

@@ -64,12 +64,10 @@ export default function Proyectos() {
                             proyectos.map((proyecto) => (
                                 <div className={`col-lg-4 col-md-6 item ${proyecto.category}`} key={proyecto.id}>
                                     <div className="image-holder mx-auto zoom-effect">
-                                        <Link href="project-single.html">
-                                            <Image src={proyecto.image} className="reveal-curve-top" alt={proyecto.title} width={400} height={500} />
-                                        </Link>
+                                        <Image src={proyecto.image} className="reveal-curve-top" alt={proyecto.title} width={400} height={500} />
                                     </div>
                                     <h3 className="fs-3 text-uppercase text-center mt-3 mb-5">
-                                        <Link href="project-single.html">{proyecto.title}</Link>
+                                        {proyecto.title}
                                     </h3>
                                 </div>
                             ))

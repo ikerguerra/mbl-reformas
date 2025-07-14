@@ -601,10 +601,7 @@ a.text-hover:focus:after{
   transition: 0.5s ease;
 }
 
-.zoom-effect:hover:before {
-  opacity: 1;
-  cursor: pointer;
-}
+
 
 /* 3.4 Left Pattern
 ------------------------------------------*/
@@ -1138,6 +1135,6 @@ span.price-tick {
   color: var(--primary-color);
 }
 
-.font-size-li {
+li {
   font-size: 18px;
 }

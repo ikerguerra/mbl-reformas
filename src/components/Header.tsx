@@ -100,27 +100,12 @@ export default function Header() {
                                 <ul className="navbar-nav list-unstyled align-items-center justify-content-end">
                                     <li className="pe-4">
                                         <Link href="#" className="light">
-                                            <FontAwesomeIcon icon={faFacebook} />
+                                            <FontAwesomeIcon icon={faFacebook} size="xl"/>
                                         </Link>
                                     </li>
                                     <li className="pe-4">
                                         <Link href="#" className="light">
-                                            <FontAwesomeIcon icon={faInstagram} />
-                                        </Link>
-                                    </li>
-                                    <li className="pe-4">
-                                        <Link href="#" className="light">
-                                            <FontAwesomeIcon icon={faTwitter} />
-                                        </Link>
-                                    </li>
-                                    <li className="pe-4">
-                                        <Link href="#" className="light">
-                                            <FontAwesomeIcon icon={faLinkedin} />
-                                        </Link>
-                                    </li>
-                                    <li className="pe-4">
-                                        <Link href="#" className="light">
-                                            <FontAwesomeIcon icon={faYoutube} />
+                                            <FontAwesomeIcon icon={faInstagram} size="xl"/>
                                         </Link>
                                     </li>
                                 </ul>

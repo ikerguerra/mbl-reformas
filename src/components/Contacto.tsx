@@ -55,27 +55,12 @@ export default function Contacto() {
                                             <ul className="list-unstyled d-flex gap-3 mt-4 ">
                                                 <li>
                                                     <Link href="#" className="me-3 p-0">
-                                                        <FontAwesomeIcon icon={faFacebook} size="lg" />
+                                                        <FontAwesomeIcon icon={faFacebook} size="xl" />
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <a href="#" className="me-3 p-0">
-                                                        <FontAwesomeIcon icon={faInstagram} size="lg" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" className="me-3 p-0">
-                                                        <FontAwesomeIcon icon={faTwitter} size="lg" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" className="me-3 p-0">
-                                                        <FontAwesomeIcon icon={faYoutube} size="lg" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" className="me-3 p-0">
-                                                        <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                                                        <FontAwesomeIcon icon={faInstagram} size="xl" />
                                                     </a>
                                                 </li>
                                             </ul>

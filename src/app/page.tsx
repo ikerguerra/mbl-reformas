@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         <div className="container-lg">
           <div className="banner-content position-absolute" data-aos="fade-up">
-            <h1 className="banner-title light text-uppercase fw-bold">CALIDAD, SOSTENIBILIDAD Y COMPROMISO</h1>
+            <h1 className="banner-title light text-uppercase fw-bold">CALIDAD COMPROMISO SOSTENIBILIDAD</h1>
             <Link href="/nuestros-proyectos" className="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">
               <span>Nuestros proyectos</span>
             </Link>
@@ -37,7 +37,7 @@ export default function Home() {
 
       <AutoCounter />
 
-      <Reviews />
+      {/* <Reviews /> */}
 
       <Proyectos />
 

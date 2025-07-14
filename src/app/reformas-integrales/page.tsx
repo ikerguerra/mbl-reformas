@@ -31,15 +31,15 @@ export default function ReformasIntegralesPage() {
                                     <h2 className="text-uppercase mb-3 left-pattern">Transforma tu hogar sin complicaciones</h2>
                                     <h3 className="text-uppercase mb-3">Especialistas en reformas integrales </h3>
                                     <ul className="inner-list list-unstyled d-flex flex-column gap-3 mt-4">
-                                        <li><span className="price-tick">✓</span> Te ayudamos a optimizar cada espacio según tus necesidades.</li>
-                                        <li><span className="price-tick">✓</span> Contamos con un equipo cualificado para ejecutar tu proyecto con precisión..</li>
-                                        <li><span className="price-tick">✓</span> Te guiamos en cada paso para lograr un estilo coherente y personalizado.</li>
-                                        <li><span className="price-tick">✓</span> Trabajamos en todo Asturias llevando calidad.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Te ayudamos a optimizar cada espacio según tus necesidades.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Contamos con un equipo cualificado para ejecutar tu proyecto con precisión..</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Te guiamos en cada paso para lograr un estilo coherente y personalizado.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Trabajamos en todo Asturias llevando calidad.</li>
                                     </ul>
                                 </div>
                                 <div className="my-5">
                                     <a href="/contacto" className="btn-slide btn-medium btn-dark hover-slide-right text-uppercase">
-                                        <span>Pide información</span>
+                                        <span>Pide tu presupuesto</span>
                                     </a>
                                 </div>
                             </div>

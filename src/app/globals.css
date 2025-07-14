@@ -1137,3 +1137,7 @@ span.price-tick {
 .primary-color {
   color: var(--primary-color);
 }
+
+.font-size-li {
+  font-size: 18px;
+}

@@ -31,15 +31,15 @@ export default function ReformasBanosPage() {
                                     <h2 className="text-uppercase mb-3 left-pattern">TU BAÑO, TU ESPACIO</h2>
                                     <h3 className="text-uppercase mb-3">¿Imaginas un baño hecho a tu medida?</h3>
                                     <ul className="inner-list list-unstyled d-flex flex-column gap-3 mt-4">
-                                        <li><span className="price-tick">✓</span> Te guiamos para que el diseño final refleje tu estilo.</li>
-                                        <li><span className="price-tick">✓</span> Cuidamos los detalles porque creemos que en un buen baño, todo suma.</li>
-                                        <li><span className="price-tick">✓</span> Nos encargamos de todo, desde las tuberías hasta el último azulejo.</li>
-                                        <li><span className="price-tick">✓</span> Sabemos que cada baño es diferente. Por eso, el primer paso siempre es entender lo que necesitas.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Te guiamos para que el diseño final refleje tu estilo.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Cuidamos los detalles porque creemos que en un buen baño, todo suma.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Nos encargamos de todo, desde las tuberías hasta el último azulejo.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Sabemos que cada baño es diferente. Por eso, el primer paso siempre es entender lo que necesitas.</li>
                                     </ul>
                                 </div>
                                 <div className="my-5">
                                     <a href="/contacto" className="btn-slide btn-medium btn-dark hover-slide-right text-uppercase">
-                                        <span>Pide información</span>
+                                        <span>Pide tu presupuesto</span>
                                     </a>
                                 </div>
                             </div>

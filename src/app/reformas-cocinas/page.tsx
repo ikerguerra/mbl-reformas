@@ -31,15 +31,15 @@ export default function ReformasCocinasPage() {
                                     <h2 className="text-uppercase mb-3 left-pattern">DONDE TODO EMPIEZA</h2>
                                     <h3 className="text-uppercase mb-3">Reformamos tu cocina</h3>
                                     <ul className="inner-list list-unstyled d-flex flex-column gap-3 mt-4">
-                                        <li><span className="price-tick">✓</span> </li>
-                                        <li><span className="price-tick">✓</span> </li>
-                                        <li><span className="price-tick">✓</span> </li>
-                                        <li><span className="price-tick">✓</span> </li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Cocinas con alma y funcionalidad.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Nos encargamos de lo complejo, tú eliges lo que te gusta.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Te escuchamos antes de dibujar una sola línea.</li>
+                                        <li className="font-size-li"><span className="price-tick">✓</span> Diseños que conectan contigo.</li>
                                     </ul>
                                 </div>
                                 <div className="my-5">
                                     <a href="/contacto" className="btn-slide btn-medium btn-dark hover-slide-right text-uppercase">
-                                        <span>Pide información</span>
+                                        <span>Pide tu presupuesto</span>
                                     </a>
                                 </div>
                             </div>

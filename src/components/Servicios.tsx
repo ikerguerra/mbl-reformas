@@ -10,31 +10,31 @@ export default function Servicios() {
             title: "Integrales",
             description: "Reformas completas para transformar tu hogar de principio a fin.",
             icon: faHouse,
-            link: "/integrales"
+            link: "/reformas-integrales"
         },
         {
             title: "Baños",
             description: "Diseñamos y renovamos baños modernos, cómodos y funcionales.",
             icon: faToilet,
-            link: "/banos"
+            link: "/reformas-banos"
         },
         {
             title: "Cocinas",
             description: "Cocinas a medida, prácticas y adaptadas a tu estilo.",
             icon: faSink,
-            link: "/cocinas"
+            link: "/reformas-cocinas"
         },
         {
             title: "Interior & Exterior",
             description: "Mejoramos tus espacios interiores y exteriores con diseño y calidad.",
             icon: faPaintRoller, // Placeholder for a custom icon
-            link: "/interior-exterior"
+            link: "/reformas-interior-exterior"
         },
         {
             title: "Locales Comerciales",
             description: "Adaptamos tu local comercial para atraer más clientes.",
             icon: faShop,
-            link: "/locales-comerciales"
+            link: "/reformas-locales-comerciales"
         }
     ];
 

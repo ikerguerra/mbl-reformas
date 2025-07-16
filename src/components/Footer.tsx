@@ -8,29 +8,23 @@ export default function Footer() {
                     <div className="col-lg-3 col-md-6 col-sm-6 pb-3">
                         <div className="footer-menu">
                             <h3 className="banner-title light text-uppercase fw-bold color-dark">M<span className="primary-color">B</span>L</h3>
-                            <p className="light">Vehicula at eget a arcu neque, ultricies liquet tempus.</p>
+                            <p className="light">Calidad, compromiso y sostenibilidad</p>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-6 col-sm-6 pb-3">
                         <div className="footer-menu">
                             <ul className="menu-list list-unstyled">
                                 <li className="pb-2">
-                                    <Link href="#about" className="light">About</Link>
+                                    <Link href="/servicios" className="light">Servicios</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <Link href="#" className="light">Terms &amp; Conditions</Link>
+                                    <Link href="/nosotros" className="light">Nosotros</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <Link href="#" className="light">Privacy Policy</Link>
+                                    <Link href="/nuestros-proyectos" className="light">Proyectos</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <Link href="#" className="light">Career</Link>
-                                </li>
-                                <li className="pb-2">
-                                    <Link href="#" className="light">Contact</Link>
-                                </li>
-                                <li className="pb-2">
-                                    <Link href="#" className="light">Help</Link>
+                                    <Link href="/contacto" className="light">Contacto</Link>
                                 </li>
                             </ul>
                         </div>
@@ -39,16 +33,13 @@ export default function Footer() {
                         <div className="footer-menu">
                             <ul className="menu-list list-unstyled">
                                 <li className="pb-2">
-                                    <Link href="#about" className="light">Quick Links</Link>
+                                    <Link href="/reformas-integrales" className="light">Integrales</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <Link href="#" className="light">Newsletter</Link>
+                                    <Link href="/reformas-banos" className="light">Baños</Link>
                                 </li>
                                 <li className="pb-2">
-                                    <Link href="#" className="light">Articles</Link>
-                                </li>
-                                <li className="pb-2">
-                                    <Link href="#" className="light">Location</Link>
+                                    <Link href="/reformas-cocinas" className="light">Cocinas</Link>
                                 </li>
                             </ul>
                         </div>
@@ -56,10 +47,10 @@ export default function Footer() {
                     <div className="col-lg-3 col-md-6 col-sm-6 pb-3">
                         <div className="footer-menu">
                             <ul className="menu-list list-unstyled">
-                                <li className="pb-2 light">163 Elm Drive, New York City United States </li>
-                                <li className="pb-2 light">(+089) 234-516-6123 </li>
+                                <li className="pb-2 light">Gijón, Principado de Asturias</li>
+                                <li className="pb-2 light">+34 666 555 444 </li>
                                 <li className="pb-2">
-                                    <Link href="mailto:" className="nav-link light">info@yourinfo.com</Link>
+                                    <Link href="mailto:info@construccionesmbl.es" className="light">info@construccionesmbl.es</Link>
                                 </li>
                             </ul>
                         </div>

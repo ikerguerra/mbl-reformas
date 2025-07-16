@@ -8,7 +8,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Reviews } from "@/components/Reviews";
+// import { Reviews } from "@/components/Reviews";
 
 export default function Home() {
 

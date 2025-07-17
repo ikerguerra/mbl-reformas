@@ -5,6 +5,8 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import LogoMBL from "./LogoMBL";
+import Image from "next/image";
 
 export default function Header() {
 
@@ -48,7 +50,8 @@ export default function Header() {
             <nav id="header-nav" className={`navbar navbar-expand-lg p-3 container-fluid position-fixed smart-scroll ${isScrolling} ${isScrollingUp}`}>
                 <div className="container-lg">
                     <Link className="navbar-brand" href="/">
-                        <h3 className="banner-title light text-uppercase fw-bold">M<span className="primary-color">B</span>L</h3>
+                        {/* <Image src="/assets/LogoMBL.svg" alt="Logo MBL" width={200} height={125} /> */}
+                        <LogoMBL />
                     </Link>
                     <button className="navbar-toggler d-flex d-lg-none order-3 p-2 shadow-none" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"

@@ -5,6 +5,29 @@ import Image from "next/image";
 
 export default function ReformasIntegralesPage() {
 
+    const preguntas = [
+        {
+            question: "¿Qué incluye una reforma integral?",
+            answer: "Una reforma integral abarca la renovación completa de un espacio, incluyendo estructuras, instalaciones eléctricas, fontanería y acabados."
+        },
+        {
+            question: "¿Cómo se gestiona el proyecto de reforma integral?",
+            answer: "Nos encargamos de todo el proceso, desde la planificación y diseño hasta la ejecución y supervisión de los trabajos."
+        },
+        {
+            question: "¿Cuánto tiempo suele llevar una reforma integral?",
+            answer: "El tiempo varía según el tamaño y complejidad del proyecto, pero generalmente puede tomar entre 4 a 12 semanas."
+        },
+        {
+            question: "¿Puedo personalizar el diseño de mi reforma integral?",
+            answer: "Sí, trabajamos contigo para crear un diseño que se adapte a tus gustos y necesidades específicas."
+        },
+        {
+            question: "¿Cómo puedo solicitar un presupuesto?",
+            answer: "Para solicitar un presupuesto, puedes contactarnos a través de nuestro formulario en la página de contacto o llamarnos directamente. Estaremos encantados de ayudarte."
+        }
+    ];
+
     return (
         <div className="overflow-hidden">
             <HeroSection
@@ -44,7 +67,9 @@ export default function ReformasIntegralesPage() {
 
             <Nosotros />
 
-            <FAQs />
+            <FAQs
+                preguntasFrecuentes={preguntas}
+            />
         </div>
     );
 }

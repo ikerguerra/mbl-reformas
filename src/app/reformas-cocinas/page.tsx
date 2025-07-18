@@ -5,6 +5,33 @@ import Image from "next/image";
 
 export default function ReformasCocinasPage() {
 
+    const preguntas = [
+        {
+            question: "¿Por dónde empezar el diseño?",
+            answer: "Comienza por definir tus necesidades y deseos, realizar mediciones precisas del espacio y considerar la ubicación de puertas, ventanas y conexiones existentes."
+        },
+        {
+            question: "¿Cómo distribuir los muebles y electrodomésticos?",
+            answer: "Considera el triángulo de trabajo (fregadero, nevera, cocina) y busca una distribución ergonómica y funcional que se adapte a tus hábitos."
+        },
+        {
+            question: "¿Cocina abierta o cerrada?",
+            answer: "Una cocina abierta puede crear una sensación de mayor amplitud y fomentar la interacción social, mientras que una cerrada puede ser más adecuada para quienes buscan mantener el ruido y los olores contenidos."
+        },
+        {
+            question: "¿Es mejor una isla o península?",
+            answer: "Las islas y penínsulas ofrecen espacio adicional de trabajo y almacenamiento, pero requieren suficiente espacio para ser funcionales."
+        },
+        {
+            question: "¿Cómo optimizar el espacio de almacenamiento?",
+            answer: "Utiliza soluciones de almacenamiento inteligente, como cajones extraíbles, estantes deslizantes y organizadores."
+        },
+        {
+            question: "¿Cómo puedo solicitar un presupuesto?",
+            answer: "Para solicitar un presupuesto, puedes contactarnos a través de nuestro formulario en la página de contacto o llamarnos directamente. Estaremos encantados de ayudarte."
+        }
+    ];
+
     return (
         <div className="overflow-hidden">
             <HeroSection
@@ -44,7 +71,9 @@ export default function ReformasCocinasPage() {
 
             <Nosotros />
 
-            <FAQs />
+            <FAQs
+                preguntasFrecuentes={preguntas}
+            />
         </div>
     );
 }

@@ -5,6 +5,33 @@ import Image from "next/image";
 
 export default function ReformasLocalesComercialesPage() {
 
+    const preguntas = [
+        {
+            question: "¿Qué tipo de reformas ofrecen para locales comerciales?",
+            answer: "Ofrecemos reformas integrales, remodelaciones de espacios comerciales, y adaptaciones según las necesidades del negocio."
+        },
+        {
+            question: "¿Cuánto tiempo tardará la reforma de mi local comercial?",
+            answer: "El tiempo de reforma varía según el proyecto. Una vez que evaluemos tus necesidades, te proporcionaremos un plazo estimado."
+        },
+        {
+            question: "¿Cómo puedo solicitar un presupuesto?",
+            answer: "Para solicitar un presupuesto, puedes contactarnos a través de nuestro formulario en la página de contacto o llamarnos directamente. Estaremos encantados de ayudarte."
+        },
+        {
+            question: "¿Cómo se gestiona el proyecto de reforma de un local comercial?",
+            answer: "Nos encargamos de todo el proceso, desde la planificación y diseño hasta la ejecución y supervisión de los trabajos, asegurando que se cumplan los plazos y presupuestos acordados."
+        },
+        {
+            question: "¿Qué consideraciones debo tener en cuenta al reformar un local comercial?",
+            answer: "Es importante considerar la funcionalidad del espacio, la imagen de marca, las normativas locales y las necesidades específicas de tu negocio para crear un ambiente atractivo y eficiente."
+        },
+        {
+            question: "¿Cómo puedo maximizar el espacio en mi local comercial?",
+            answer: "Utilizamos soluciones de diseño inteligente, como mobiliario modular, estanterías verticales y una distribución eficiente del espacio para maximizar la funcionalidad y la estética."
+        }
+    ];
+
     return (
         <div className="overflow-hidden">
             <HeroSection
@@ -43,7 +70,9 @@ export default function ReformasLocalesComercialesPage() {
 
             <Nosotros />
 
-            <FAQs />
+            <FAQs
+                preguntasFrecuentes={preguntas}
+            />
         </div>
     );
 }

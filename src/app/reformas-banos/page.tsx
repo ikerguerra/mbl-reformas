@@ -5,6 +5,29 @@ import Image from "next/image";
 
 export default function ReformasBanosPage() {
 
+    const preguntas = [
+        {
+            question: "¿Cuánto cuesta reformar un baño completo?",
+            answer: "El costo varía según el tamaño del baño, la calidad de los materiales, la complejidad de la obra y si es una reforma parcial o integral."
+        },
+        {
+            question: "¿Qué factores influyen en el precio?",
+            answer: "Los materiales (pavimentos, revestimientos, sanitarios, grifería), la mano de obra, los trabajos de fontanería y electricidad, y la complejidad del diseño son factores clave."
+        },
+        {
+            question: "¿Cuánto tiempo se tarda en reformar un baño?",
+            answer: "Una reforma parcial puede llevar de 3 a 5 días, mientras que una reforma integral puede tomar de 1 a 3 semanas, dependiendo del tamaño y la complejidad."
+        },
+        {
+            question: "¿Cómo planifico la distribución del baño?",
+            answer: "Es fundamental considerar la funcionalidad y el espacio disponible. Se recomienda hacer un plano a escala y visualizar la distribución de cada elemento."
+        },
+        {
+            question: "¿Cómo puedo solicitar un presupuesto?",
+            answer: "Para solicitar un presupuesto, puedes contactarnos a través de nuestro formulario en la página de contacto o llamarnos directamente. Estaremos encantados de ayudarte."
+        }
+    ];
+
     return (
         <div className="overflow-hidden">
             <HeroSection
@@ -44,7 +67,9 @@ export default function ReformasBanosPage() {
 
             <Nosotros />
 
-            <FAQs />
+            <FAQs
+                preguntasFrecuentes={preguntas}
+            />
         </div>
     );
 }

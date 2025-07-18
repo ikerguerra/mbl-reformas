@@ -5,6 +5,33 @@ import Image from "next/image";
 
 export default function ReformasInteriorExteriorPage() {
 
+    const preguntas = [
+        {
+            question: "¿Qué tipo de reformas ofrecen para interiores y exteriores?",
+            answer: "Ofrecemos reformas integrales, remodelaciones de cocinas y baños, así como mejoras en fachadas y espacios exteriores."
+        },
+        {
+            question: "¿Cómo puedo solicitar un presupuesto?",
+            answer: "Para solicitar un presupuesto, puedes contactarnos a través de nuestro formulario en la página de contacto o llamarnos directamente. Estaremos encantados de ayudarte."
+        },
+        {
+            question: "¿Qué incluye el servicio de interiorismo?",
+            answer: "El servicio de interiorismo incluye el diseño completo de los espacios interiores, la selección de materiales y acabados, y la planificación de la distribución de muebles y elementos decorativos para maximizar la funcionalidad."
+        },
+        {
+            question: "¿Cómo puedo mejorar la eficiencia energética de mi hogar?",
+            answer: "Recomendamos realizar una auditoría energética para identificar áreas de mejora, como el aislamiento, la instalación de ventanas de doble acristalamiento y el uso de sistemas de calefacción y refrigeración eficientes."
+        },
+        {
+            question: "¿Qué tipo de materiales utilizan en las reformas?",
+            answer: "Utilizamos materiales de alta calidad y sostenibles, adaptados a las necesidades y preferencias del cliente, asegurando durabilidad y estética."
+        },
+        {
+            question: "¿Cómo se gestionan los permisos necesarios para las reformas?",
+            answer: "Nos encargamos de gestionar todos los permisos necesarios ante las autoridades locales para garantizar que la reforma cumpla con la normativa vigente."
+        }
+    ];
+
     return (
         <div className="overflow-hidden">
             <HeroSection
@@ -44,7 +71,9 @@ export default function ReformasInteriorExteriorPage() {
 
             <Nosotros />
 
-            <FAQs />
+            <FAQs
+                preguntasFrecuentes={preguntas}
+            />
         </div>
     );
 }

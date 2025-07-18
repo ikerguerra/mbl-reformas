@@ -1,6 +1,6 @@
 import FAQs from "@/components/FAQs";
 import HeroSection from "@/components/HeroSection";
-import Nosotros from "@/components/Nosotros";
+import Nosotros from "@/components/NosotrosCTA";
 import Image from "next/image";
 
 export default function ReformasIntegralesPage() {

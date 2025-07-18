@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Nosotros() {
+export default function NosotrosCTA() {
     return (
         <section id="about" className="padding-large bg-gray-200">
             <div className="container" data-aos="fade-up">
@@ -13,11 +13,11 @@ export default function Nosotros() {
                     </div>
                     <div className="col-lg-6">
                         <p>
-                            <strong className="pb-2 d-block">Enim leo leo non in viverra adipiscing nisi sed dictum nisi
-                                blandit.</strong> Gravida feugiat viverra porttitor semper in faucibus ut. Ipsum, vel
-                            aliquet purus urna placerat convallis felis. Pretium curabitur fames est.
+                            <strong className="pb-2 d-block">Nuestra visión</strong>
+                            Promover un desarrollo que cuide el medio ambiente, genere empleo local y reduzca la huella ecológica. 
+                            Creemos en la innovación verde, el diseño eficiente y la construcción responsable como camino hacia ciudades más humanas y sostenibles.
                         </p>
-                        <Link href="about.html" className="btn-slide btn-medium btn-dark hover-slide-right text-uppercase mt-5">
+                        <Link href="/nosotros" className="btn-slide btn-medium btn-dark hover-slide-right text-uppercase mt-5">
                             <span>Nosotros</span>
                         </Link>
                     </div>

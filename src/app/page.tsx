@@ -2,7 +2,7 @@
 
 import AutoCounter from "@/components/AutoCounter";
 import Proyectos from "@/components/Proyectos";
-import SobreNosotros from "@/components/Nosotros";
+import Nosotros from "@/components/NosotrosCTA";
 import Image from "next/image";
 import Link from "next/link";
 import AOS from "aos";
@@ -41,7 +41,7 @@ export default function Home() {
 
       <Proyectos />
 
-      <SobreNosotros />
+      <Nosotros />
     </div>
   );
 }

@@ -47,7 +47,7 @@ export default function Header() {
 
     return (
         <header id="header" className="site-header position-absolute">
-            <nav id="header-nav" className={`navbar navbar-expand-lg p-3 container-fluid position-fixed smart-scroll ${isScrolling} ${isScrollingUp}`}>
+            <nav id="header-nav" className={`navbar navbar-expand-lg container-fluid position-fixed smart-scroll ${isScrolling} ${isScrollingUp}`}>
                 <div className="container-lg">
                     <Link className="navbar-brand" href="/">
                         {/* <Image src="/assets/LogoMBL.svg" alt="Logo MBL" width={200} height={125} /> */}

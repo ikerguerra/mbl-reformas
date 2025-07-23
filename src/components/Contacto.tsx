@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faClock, faEnvelope, faLocationDot, faMobileScreenButton, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faEnvelope, faLocationDot, faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function Contacto() {

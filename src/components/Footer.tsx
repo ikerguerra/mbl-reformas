@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LogoMBL from "./LogoMBL";
 
 export default function Footer() {
     return (
@@ -7,7 +8,7 @@ export default function Footer() {
                 <div className="row d-flex flex-wrap justify-content-between">
                     <div className="col-lg-3 col-md-6 col-sm-6 pb-3">
                         <div className="footer-menu">
-                            <h3 className="banner-title light text-uppercase fw-bold color-dark">M<span className="primary-color">B</span>L</h3>
+                            <LogoMBL />
                             <p className="light">Calidad, compromiso y sostenibilidad</p>
                         </div>
                     </div>

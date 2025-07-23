@@ -19,25 +19,19 @@ export default function Contacto() {
                                                 <span className="d-flex align-items-center justify-content-center rounded-circle bg-light p-2" style={{ width: 48, height: 48, minWidth: 48 }}>
                                                     <FontAwesomeIcon icon={faLocationDot} size="2xl" />
                                                 </span>
-                                                <span className="ms-3">Gijón, Principado de Asturias, España</span>
-                                            </li>
-                                            <li className="d-flex align-items-center mb-4">
-                                                <span className="d-flex align-items-center justify-content-center rounded-circle bg-light p-2" style={{ width: 48, height: 48, minWidth: 48 }}>
-                                                    <FontAwesomeIcon icon={faPhone} size="2xl" />
-                                                </span>
-                                                <a href="tel:+123987321" className="ms-3 text-decoration-none text-dark">+123 987 321</a>
+                                                <span className="ms-3">Av. Argentina 132 (Cristasa of.221), Gijón, Asturias</span>
                                             </li>
                                             <li className="d-flex align-items-center mb-4">
                                                 <span className="d-flex align-items-center justify-content-center rounded-circle bg-light p-2" style={{ width: 48, height: 48, minWidth: 48 }}>
                                                     <FontAwesomeIcon icon={faMobileScreenButton} size="2xl" />
                                                 </span>
-                                                <a href="tel:+123123654" className="ms-3 text-decoration-none text-dark">+123 123 654</a>
+                                                <a href="tel:+123123654" className="ms-3 text-decoration-none text-dark">684 675 898</a>
                                             </li>
                                             <li className="d-flex align-items-center mb-4">
                                                 <span className="d-flex align-items-center justify-content-center rounded-circle bg-light p-2" style={{ width: 48, height: 48, minWidth: 48 }}>
                                                     <FontAwesomeIcon icon={faEnvelope} size="2xl" />
                                                 </span>
-                                                <a href="mailto:mbl@construccionesmbl.com" className="ms-3 text-decoration-none text-dark">mbl@construccionesmbl.com</a>
+                                                <a href="mailto:mbl@construccionesmbl.com" className="ms-3 text-decoration-none text-dark">info@construccionesmbl.com</a>
                                             </li>
                                             <li className="d-flex align-items-center mb-4">
                                                 <span className="d-flex align-items-center justify-content-center rounded-circle bg-light p-2" style={{ width: 48, height: 48, minWidth: 48 }}>

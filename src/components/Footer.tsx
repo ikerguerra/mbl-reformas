@@ -47,10 +47,10 @@ export default function Footer() {
                     <div className="col-lg-3 col-md-6 col-sm-6 pb-3">
                         <div className="footer-menu">
                             <ul className="menu-list list-unstyled">
-                                <li className="pb-2 light">Gijón, Principado de Asturias</li>
-                                <li className="pb-2 light">+34 666 555 444 </li>
+                                <li className="pb-2 light">Av. Argentina 132 (Cristasa of.221), Gijón, Asturias</li>
+                                <li className="pb-2 light">684 675 898</li>
                                 <li className="pb-2">
-                                    <Link href="mailto:info@construccionesmbl.es" className="light">info@construccionesmbl.es</Link>
+                                    <Link href="mailto:info@construccionesmbl.es" className="light">info@construccionesmbl.com</Link>
                                 </li>
                             </ul>
                         </div>

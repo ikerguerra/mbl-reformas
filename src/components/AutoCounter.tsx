@@ -69,7 +69,7 @@ export default function AutoCounter() {
       <div className="container" data-aos="fade-up">
         <div className="row">
           {items.map((item, index) => (
-            <div key={index} className="col-lg-4 col-md-6 col-sm-6">
+            <div key={index} className="col-lg-4 col-md-4">
               <div className="counter-info text-center flex align-items-end">
                 <div className="counter-number flex items-center">
                   <h4 className="timer fw-bold m-0">

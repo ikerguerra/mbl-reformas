@@ -1,9 +1,64 @@
+'use client';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faClock, faEnvelope, faLocationDot, faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Contacto() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    const form = useRef<HTMLFormElement | null>(null);
+
+    const { name, email, phone, message } = formData;
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    }
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (form.current) {
+            emailjs
+                .sendForm(
+                    process.env.NEXT_PUBLIC_SERVICE_ID!,
+                    process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+                    form.current,
+                    {
+                        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY!,
+                    }
+                )
+                .then(
+                    () => {
+                        console.log('SUCCESS!');
+                        toast.success("Email enviado correctamente");
+                    },
+                    (error) => {
+                        console.log('FAILED...', error.text);
+                        toast.error("Error al enviar el email. Inténtalo de nuevo");
+                    },
+                );
+
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                message: ''
+            });
+        }
+    };
+
     return (
         <>
             <section className="contact-us-wrap py-5 mt-5">
@@ -66,34 +121,39 @@ export default function Contacto() {
                         <div className="inquiry-item col-md-6">
                             <h3>Contacta con nosotros</h3>
 
-                            <p className="mt-4">Ponte en contacto con nosotros a través del formulario o llámanos para hablar directamente con un especialista en construcción, reformas o 
+                            <p className="mt-4">Ponte en contacto con nosotros a través del formulario o llámanos para hablar directamente con un especialista en construcción, reformas o
                                 rehabilitación. Nos encantará conocer tu caso y ofrecerte una primera asesoría personalizada y sin compromiso.</p>
-                            <form name="contactform" action="contact.php" method="post" className="form-group contact-form mt-4">
+                            <form name="contactform" ref={form} onSubmit={sendEmail} className="form-group contact-form mt-4">
                                 <div className="form-input col-lg-12 d-flex justify-content-between mb-3">
                                     <div className="w-100 me-3">
                                         <label className="mb-2 fs-6 text-dark">Nombre</label>
-                                        <input type="text" name="name" placeholder="Nombre" className="form-control shadow-none px-3 py-2" required />
+                                        <input type="text" name="name" placeholder="Nombre" className="form-control shadow-none px-3 py-2" value={name} onChange={handleChange} required />
                                     </div>
                                     <div className="w-100">
                                         <label className="mb-2 fs-6 text-dark">E-mail</label>
-                                        <input type="email" name="email" placeholder="email@email.com" className="form-control shadow-none px-3 py-2" required />
+                                        <input type="email" name="email" placeholder="email@email.com" className="form-control shadow-none px-3 py-2" value={email} onChange={handleChange} required />
                                     </div>
 
                                 </div>
                                 <div className="col-lg-12 mb-3">
                                     <label className="mb-2 fs-6 text-dark">Número de teléfono</label>
-                                    <input type="number" name="phone" placeholder="Número de teléfono" className="form-control shadow-none px-3 py-2" />
+                                    <input type="number" name="phone" placeholder="Número de teléfono" className="form-control shadow-none px-3 py-2" value={phone} onChange={handleChange} />
                                 </div>
                                 <div className="col-lg-12 mb-3">
                                     <label className="mb-2 fs-6 text-dark">Mensaje</label>
 
-                                    <textarea name="message" placeholder="Escribe un mensaje" className="form-control shadow-none px-3 py-2" style={{ height: '150px' }} required></textarea>
+                                    <textarea name="message" placeholder="Escribe un mensaje" className="form-control shadow-none px-3 py-2" style={{ height: '150px' }} value={message} onChange={handleChange} required></textarea>
                                 </div>
                                 <div className="d-grid">
                                     <button type="submit" name="submit" className="btn btn-arrow btn-primary btn-lg btn-dark fs-6">Enviar</button>
                                 </div>
                             </form>
 
+                            {/* Toast mensaje envio del correo */}
+                            <Toaster
+                                position="bottom-center"
+                                reverseOrder={true}
+                            />
                         </div>
                     </div>
                 </div>

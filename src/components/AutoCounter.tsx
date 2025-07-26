@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 
 interface CounterItem {
   count: number;
@@ -12,11 +12,11 @@ export default function AutoCounter() {
   const sectionRef = useRef<HTMLElement>(null);
   const animatedRef = useRef(false);
 
-  const items: CounterItem[] = [
+  const items = useMemo<CounterItem[]>(() => [
     { count: 260, label: 'Proyectos realizados' },
     { count: 230, label: 'Clientes satisfechos' },
     { count: 20, label: 'Años de experiencia' }
-  ];
+  ], []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +62,7 @@ export default function AutoCounter() {
 
       requestAnimationFrame(animate);
     });
-  }, [isVisible]);
+  }, [isVisible, items]);
 
   return (
     <section id="our-achievement" className="padding-large bg-gray-200" ref={sectionRef}>

@@ -2,7 +2,6 @@ import AutoCounter from "@/components/AutoCounter";
 import Contacto from "@/components/Contacto";
 import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function NosotrosPage() {
 

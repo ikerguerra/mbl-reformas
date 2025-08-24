@@ -1138,3 +1138,40 @@ span.price-tick {
 li {
   font-size: 18px;
 }
+
+/*--------------------------------------------------------------
+/** 4.1 Header
+--------------------------------------------------------------*/
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.logo-mbl {
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .logo-mbl {
+    width: 120px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .logo-mbl {
+    width: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-mbl {
+    width: 175px;
+  }
+}
+
+/* Ajuste del logo cuando la navbar está en modo scrolling */
+.smart-scroll.up .logo-mbl {
+  transform: scale(0.9);
+}

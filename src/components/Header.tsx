@@ -48,8 +48,8 @@ export default function Header() {
         <header id="header" className="site-header position-absolute">
             <nav id="header-nav" className={`navbar navbar-expand-lg container-fluid position-fixed smart-scroll ${isScrolling} ${isScrollingUp}`}>
                 <div className="container-lg">
-                    <Link className="navbar-brand" href="/">
-                        <LogoMBL />
+                    <Link className="navbar-brand py-2" href="/">
+                        <LogoMBL className="logo-mbl" />
                     </Link>
                     <button className="navbar-toggler d-flex d-lg-none order-3 p-2 shadow-none" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"

@@ -1,5 +1,6 @@
 import AutoCounter from "@/components/AutoCounter";
 import Contacto from "@/components/Contacto";
+import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,20 +8,11 @@ export default function NosotrosPage() {
 
     return (
         <div className="overflow-hidden">
-            <section id="intro" style={{ backgroundImage: "url('/assets/banner-item1.jpg')" }}>
-                <div className="overlay"></div>
-                <div className="container pt-5" data-aos="fade-up">
-                    <div className="row py-5 ">
-                        <div className="banner-content my-5 py-5">
-                            <h1 className="banner-title light text-uppercase fw-bold">Nosotros</h1>
-                            <nav className="breadcrumb mt-3 ">
-                                <Link className="breadcrumb-item text-white" href="index.html">Home</Link>
-                                <span className="breadcrumb-item active text-white" aria-current="page">/ Project</span>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <HeroSection
+                title="Nosotros"
+                breadcrumb="/ Nosotros"
+                backgroundImage="/assets/hero-nosotros.jpg"
+            />
 
             <section id="about-us" className="my-5 py-5">
                 <div className="vertical-element" data-aos="fade-up">
@@ -38,8 +30,8 @@ export default function NosotrosPage() {
                                         <h3>¿Quiénes somos?</h3>
                                     </div>
 
-                                    <p>Somos una empresa de construcción, refomas y rehabilitación con más de 20 años de experiencia en el sector. Nos especializamos en ofrecer 
-                                        servicios de alta calidad, adaptados a las necesidades de nuestros clientes, siempre priorizando la sostenibilidad y el compromiso con el 
+                                    <p>Somos una empresa de construcción, refomas y rehabilitación con más de 20 años de experiencia en el sector. Nos especializamos en ofrecer
+                                        servicios de alta calidad, adaptados a las necesidades de nuestros clientes, siempre priorizando la sostenibilidad y el compromiso con el
                                         medio ambiente.</p>
                                 </div>
                             </div>

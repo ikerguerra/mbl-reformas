@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BootstrapClient from "@/components/BootstrapClient";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <BootstrapClient />
         <Header />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

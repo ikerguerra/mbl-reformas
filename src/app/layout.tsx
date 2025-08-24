@@ -20,8 +20,8 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "MBL - Construction Company",
-  description: "Empresa de reformas y construcción",
+  title: "MBL - Empresa de reformas y construcción",
+  description: "Empresa de reformas y construcción"
 };
 
 export default function RootLayout({

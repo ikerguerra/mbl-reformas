@@ -100,12 +100,12 @@ export default function Header() {
                             <div className="social-links d-flex mt-5 mt-lg-0 align-items-center justify-content-end">
                                 <ul className="navbar-nav list-unstyled align-items-center justify-content-end">
                                     <li className="pe-4">
-                                        <Link href="#" className="light">
+                                        <Link href="https://www.facebook.com/share/16tUCqBDie/?mibextid=wwXIfr" className="light">
                                             <FontAwesomeIcon icon={faFacebook} size="xl"/>
                                         </Link>
                                     </li>
                                     <li className="pe-4">
-                                        <Link href="#" className="light">
+                                        <Link href="https://www.instagram.com/construccionesmbl" className="light">
                                             <FontAwesomeIcon icon={faInstagram} size="xl"/>
                                         </Link>
                                     </li>

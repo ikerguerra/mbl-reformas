@@ -64,6 +64,43 @@ export default function Contacto() {
             <section className="contact-us-wrap py-5 mt-5">
                 <div className="container" data-aos="fade-up">
                     <div className="row">
+                        <div className="inquiry-item col-md-6">
+                            <h3>Contacta con nosotros</h3>
+
+                            <p className="mt-4">Ponte en contacto con nosotros a través del formulario o llámanos para hablar directamente con un especialista en construcción, reformas o
+                                rehabilitación. Nos encantará conocer tu caso y ofrecerte una primera asesoría personalizada y sin compromiso.</p>
+                            <form name="contactform" ref={form} onSubmit={sendEmail} className="form-group contact-form mt-4">
+                                <div className="form-input col-lg-12 d-flex justify-content-between mb-3">
+                                    <div className="w-100 me-3">
+                                        <label className="mb-2 fs-6 text-dark">Nombre</label>
+                                        <input type="text" name="name" placeholder="Nombre" className="form-control shadow-none px-3 py-2" value={name} onChange={handleChange} required />
+                                    </div>
+                                    <div className="w-100">
+                                        <label className="mb-2 fs-6 text-dark">E-mail</label>
+                                        <input type="email" name="email" placeholder="email@email.com" className="form-control shadow-none px-3 py-2" value={email} onChange={handleChange} required />
+                                    </div>
+
+                                </div>
+                                <div className="col-lg-12 mb-3">
+                                    <label className="mb-2 fs-6 text-dark">Número de teléfono</label>
+                                    <input type="number" name="phone" placeholder="Número de teléfono" className="form-control shadow-none px-3 py-2" value={phone} onChange={handleChange} />
+                                </div>
+                                <div className="col-lg-12 mb-3">
+                                    <label className="mb-2 fs-6 text-dark">Mensaje</label>
+
+                                    <textarea name="message" placeholder="Escribe un mensaje" className="form-control shadow-none px-3 py-2" style={{ height: '150px' }} value={message} onChange={handleChange} required></textarea>
+                                </div>
+                                <div className="d-grid">
+                                    <button type="submit" name="submit" className="btn btn-arrow btn-primary btn-lg btn-dark fs-6">Enviar</button>
+                                </div>
+                            </form>
+
+                            {/* Toast mensaje envio del correo */}
+                            <Toaster
+                                position="bottom-center"
+                                reverseOrder={true}
+                            />
+                        </div>
                         <div className="contact-info col-md-6">
                             <h3>Información de contacto</h3>
                             <div className="page-content">
@@ -103,57 +140,20 @@ export default function Contacto() {
                                         <div className="social-links">
                                             <ul className="list-unstyled d-flex gap-3 mt-4 ">
                                                 <li>
-                                                    <Link href="#" className="me-3 p-0">
+                                                    <Link href="https://www.facebook.com/share/16tUCqBDie/?mibextid=wwXIfr" className="me-3 p-0">
                                                         <FontAwesomeIcon icon={faFacebook} size="xl" />
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="me-3 p-0">
+                                                    <Link href="https://www.instagram.com/construccionesmbl" className="me-3 p-0">
                                                         <FontAwesomeIcon icon={faInstagram} size="xl" />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="inquiry-item col-md-6">
-                            <h3>Contacta con nosotros</h3>
-
-                            <p className="mt-4">Ponte en contacto con nosotros a través del formulario o llámanos para hablar directamente con un especialista en construcción, reformas o
-                                rehabilitación. Nos encantará conocer tu caso y ofrecerte una primera asesoría personalizada y sin compromiso.</p>
-                            <form name="contactform" ref={form} onSubmit={sendEmail} className="form-group contact-form mt-4">
-                                <div className="form-input col-lg-12 d-flex justify-content-between mb-3">
-                                    <div className="w-100 me-3">
-                                        <label className="mb-2 fs-6 text-dark">Nombre</label>
-                                        <input type="text" name="name" placeholder="Nombre" className="form-control shadow-none px-3 py-2" value={name} onChange={handleChange} required />
-                                    </div>
-                                    <div className="w-100">
-                                        <label className="mb-2 fs-6 text-dark">E-mail</label>
-                                        <input type="email" name="email" placeholder="email@email.com" className="form-control shadow-none px-3 py-2" value={email} onChange={handleChange} required />
-                                    </div>
-
-                                </div>
-                                <div className="col-lg-12 mb-3">
-                                    <label className="mb-2 fs-6 text-dark">Número de teléfono</label>
-                                    <input type="number" name="phone" placeholder="Número de teléfono" className="form-control shadow-none px-3 py-2" value={phone} onChange={handleChange} />
-                                </div>
-                                <div className="col-lg-12 mb-3">
-                                    <label className="mb-2 fs-6 text-dark">Mensaje</label>
-
-                                    <textarea name="message" placeholder="Escribe un mensaje" className="form-control shadow-none px-3 py-2" style={{ height: '150px' }} value={message} onChange={handleChange} required></textarea>
-                                </div>
-                                <div className="d-grid">
-                                    <button type="submit" name="submit" className="btn btn-arrow btn-primary btn-lg btn-dark fs-6">Enviar</button>
-                                </div>
-                            </form>
-
-                            {/* Toast mensaje envio del correo */}
-                            <Toaster
-                                position="bottom-center"
-                                reverseOrder={true}
-                            />
                         </div>
                     </div>
                 </div>

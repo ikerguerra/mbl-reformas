@@ -103,7 +103,7 @@ export default function PoliticaPrivacidadPage() {
                                 </div>
                                 <p className="mb-4">
                                     El usuario da su consentimiento para recibir comunicaciones comerciales relacionadas con nuestros servicios.
-                                    Podrá revocar este consentimiento enviando un correo con el asunto "BAJA" a{" "}
+                                    Podrá revocar este consentimiento enviando un correo con el asunto &quot;BAJA&quot; a{" "}
                                     <a href="mailto:info@construccionesmbl.com" className="text-primary text-decoration-underline">
                                         info@construccionesmbl.com
                                     </a>.

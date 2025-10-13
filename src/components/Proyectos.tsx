@@ -2,18 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+// import { useEffect } from "react";
 
 export default function Proyectos() {
 
-    const [filter, setFilter] = useState('*');
+    // const [filter, setFilter] = useState('*');
 
-    const filters = [
-        { value: '*', label: 'Todos' },
-        { value: '.cocina', label: 'Cocinas' },
-        { value: '.interior', label: 'Interior & Exterior' },
-        { value: '.banio', label: 'Baños' }
-    ];
+    // const filters = [
+    //     { value: '*', label: 'Todos' },
+    //     { value: '.cocina', label: 'Cocinas' },
+    //     { value: '.interior', label: 'Interior & Exterior' },
+    //     { value: '.banio', label: 'Baños' }
+    // ];
 
     const proyectos = [
         { id: 1, category: 'cocina', image: '/assets/cocina.jpeg', title: 'Cocina Moderna' },
@@ -24,23 +24,23 @@ export default function Proyectos() {
         { id: 6, category: 'interior', image: '/assets/hall.jpeg', title: 'Hall de Entrada' }
     ];
 
-    const handleFilterClick = (filterValue: string) => {
-        setFilter(filterValue);
-    }
+    // const handleFilterClick = (filterValue: string) => {
+    //     setFilter(filterValue);
+    // }
 
-    useEffect(() => {
-        const $container = document.querySelector('.isotope-container');
-        if ($container) {
-            const items = $container.querySelectorAll('.item');
-            items.forEach(item => {
-                if (filter === '*' || item.classList.contains(filter.slice(1))) {
-                    item.classList.remove('d-none');
-                } else {
-                    item.classList.add('d-none');
-                }
-            });
-        }
-    }, [filter]);
+    // useEffect(() => {
+    //     const $container = document.querySelector('.isotope-container');
+    //     if ($container) {
+    //         const items = $container.querySelectorAll('.item');
+    //         items.forEach(item => {
+    //             if (filter === '*' || item.classList.contains(filter.slice(1))) {
+    //                 item.classList.remove('d-none');
+    //             } else {
+    //                 item.classList.add('d-none');
+    //             }
+    //         });
+    //     }
+    // }, [filter]);
 
     return (
         <section id="projects" className="padding-large">

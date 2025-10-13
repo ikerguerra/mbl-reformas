@@ -1,3 +1,4 @@
+import AnimatedParallax from "@/components/AnimatedParallax";
 import HeroSection from "@/components/HeroSection";
 import Proyectos from "@/components/Proyectos";
 
@@ -12,6 +13,8 @@ export default function NuestrosProyectos() {
             />
 
             <Proyectos />
+
+            <AnimatedParallax />
         </div>
     )
 }

@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Optimización de rastreo
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*?
+Disallow: /*?*
+Disallow: /*/404
+Disallow: /404
+
+# Sitemap
+Sitemap: https://www.construccionesmbl.com/sitemap.xml
+
+# Host
+Host: https://www.construccionesmbl.com

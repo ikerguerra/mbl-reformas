@@ -65,7 +65,7 @@ export default function AutoCounter() {
   }, [isVisible, items]);
 
   return (
-    <section id="our-achievement" className="padding-large bg-gray-200" ref={sectionRef}>
+    <section id="our-achievement" className="padding-large bg-green-100" ref={sectionRef}>
       <div className="container" data-aos="fade-up">
         <div className="row">
           {items.map((item, index) => (

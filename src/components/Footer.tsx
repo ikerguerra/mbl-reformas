@@ -10,6 +10,18 @@ export default function Footer() {
                         <div className="footer-menu">
                             <LogoMBL />
                             <p className="light">Calidad, compromiso y sostenibilidad</p>
+                            {/* Legal links */}
+                            <ul className="menu-list list-unstyled mt-4">
+                                <li className="pb-2">
+                                    <Link href="/aviso-legal" className="light small">Aviso Legal</Link>
+                                </li>
+                                <li className="pb-2">
+                                    <Link href="/politica-privacidad" className="light small">Política de Privacidad</Link>
+                                </li>
+                                <li className="pb-2">
+                                    <Link href="/politica-cookies" className="light small">Política de Cookies</Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="col-lg-2 col-md-6 col-sm-6 pb-3">

@@ -1,6 +1,7 @@
 import AutoCounter from "@/components/AutoCounter";
 import Contacto from "@/components/Contacto";
 import HeroSection from "@/components/HeroSection";
+import { Reviews } from "@/components/Reviews";
 import Image from "next/image";
 
 export default function NosotrosPage() {
@@ -19,7 +20,7 @@ export default function NosotrosPage() {
                         <div className="row d-flex align-items-center">
                             <div className="col-md-5">
                                 <div className="image-holder">
-                                    <Image src="/assets/projects-item1.jpg" alt="banner" className="img-fluid" width={410} height={370} />
+                                    <Image src="/assets/quienes-somos-mbl.jpeg" alt="banner" className="img-fluid" width={410} height={370} />
                                 </div>
                             </div>
                             <div className="col-md-7">
@@ -29,7 +30,7 @@ export default function NosotrosPage() {
                                         <h3>¿Quiénes somos?</h3>
                                     </div>
 
-                                    <p>Somos una empresa de construcción, refomas y rehabilitación con más de 20 años de experiencia en el sector. Nos especializamos en ofrecer
+                                    <p>Somos una empresa de construcción, reformas y rehabilitación con más de 20 años de experiencia en el sector. Nos especializamos en ofrecer
                                         servicios de alta calidad, adaptados a las necesidades de nuestros clientes, siempre priorizando la sostenibilidad y el compromiso con el
                                         medio ambiente.</p>
                                 </div>
@@ -40,6 +41,8 @@ export default function NosotrosPage() {
             </section>
 
             <AutoCounter />
+
+            <Reviews />
 
             <Contacto />
         </div>

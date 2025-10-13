@@ -33,7 +33,7 @@ export default function ReformasBanosPage() {
             <HeroSection
                 title="Baños"
                 breadcrumb="/ Baños"
-                backgroundImage="/assets/hero-reformas-banos.jpg"
+                backgroundImage="/assets/hero-reformas-banos.jpeg"
             />
 
             <div className="post-wrap py-5 no-padding-bottom">

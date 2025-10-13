@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Proyectos() {
@@ -48,8 +49,8 @@ export default function Proyectos() {
                     <h2 className="text-uppercase mb-3 left-pattern">Nuestros proyectos</h2>
                     <h3 className="text-uppercase">Explora nuestro trabajo</h3>
                 </div>
-                <div className="projects-isotope">
-                    <div className="projects-flters d-flex flex-wrap justify-content-center my-5">
+                <div className="projects-isotope mt-5">
+                    {/* <div className="projects-flters d-flex flex-wrap justify-content-center my-5">
                         {
                             filters.map((filterItem) => (
                                 <button className={`filter-button ${filter === filterItem.value ? 'active' : ''} border-0 bg-transparent me-5 mb-3`} key={filterItem.value} onClick={() => handleFilterClick(filterItem.value)}>
@@ -57,7 +58,7 @@ export default function Proyectos() {
                                 </button>
                             ))
                         }
-                    </div>
+                    </div> */}
                     <div className="row isotope-container">
                         {
                             proyectos.map((proyecto) => (
@@ -72,7 +73,11 @@ export default function Proyectos() {
                             ))
                         }
                     </div>
+
                 </div>
+                <Link href="/contacto" className="btn-slide btn-medium btn-dark hover-slide-right text-uppercase mt-5 mx-auto d-table">
+                    <span>Pide tu presupuesto</span>
+                </Link>
             </div>
         </section>
     )

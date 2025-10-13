@@ -3,12 +3,12 @@ import ReviewsWidget from "./ReviewsWidget";
 export function Reviews() {
     return (
         <>
-            <section id="testimonials" className="padding-large jarallax" style={{ backgroundImage: "url('/assets/banner-item1.jpg')" }}>
+            <section id="testimonials" className="padding-large jarallax bg-gray-500">
                 <div className="container mt-5" data-aos="fade-up">
                     <div className="row">
                         <div className="section-header mb-5 text-uppercase">
-                            <h2 className="light left-pattern">Reseñas</h2>
-                            <h3 className="light">Lo que piensan nuestros clientes</h3>
+                            <h2 className="left-pattern">Reseñas</h2>
+                            <h3>Lo que piensan nuestros clientes</h3>
                         </div>
 
                         <ReviewsWidget />

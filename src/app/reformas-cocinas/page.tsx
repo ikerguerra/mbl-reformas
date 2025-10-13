@@ -37,7 +37,7 @@ export default function ReformasCocinasPage() {
             <HeroSection
                 title="Cocinas"
                 breadcrumb="/ Cocinas"
-                backgroundImage="/assets/cocina-hall.jpeg"
+                backgroundImage="/assets/hero-reformas-cocinas.jpg"
             />
 
             <div className="post-wrap py-5 no-padding-bottom">

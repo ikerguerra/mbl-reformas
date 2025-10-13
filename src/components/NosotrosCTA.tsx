@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NosotrosCTA() {
     return (
-        <section id="about" className="padding-large bg-gray-200">
+        <section id="about" className="padding-large bg-green-100">
             <div className="container" data-aos="fade-up">
                 <div className="row">
                     <div className="col-lg-6">

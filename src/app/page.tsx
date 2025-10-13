@@ -8,7 +8,9 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-// import { Reviews } from "@/components/Reviews";
+import { Reviews } from "@/components/Reviews";
+import QuickGuide from "@/components/QuickGuide";
+import AnimatedParallax from "@/components/AnimatedParallax";
 
 export default function Home() {
 
@@ -35,12 +37,16 @@ export default function Home() {
         </div>
       </section>
 
-      <AutoCounter />
-
-      {/* <Reviews /> */}
-
       <Proyectos />
 
+      <AnimatedParallax />
+
+      <QuickGuide />
+
+      <AutoCounter />
+
+      <Reviews />
+      
       <Nosotros />
     </div>
   );

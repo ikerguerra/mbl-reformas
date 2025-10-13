@@ -47,12 +47,12 @@ CSS STRUCTURE:
   --accent-color: #333;
   --black-color: #000;
   --dark-color: #111;
-  --gray-color-100: #F9F7F5;
-  --gray-color-200: #E3EED4;
-  --gray-color-300: #D1D1D1;
-  --gray-color-400: #C0C0C0;
-  --gray-color-500: #adb5bd;
-  --dark-gray-color: #474341;
+  --green-color-100: #F1F8F4;  /* Verde muy claro para fondos */
+  --green-color-200: #DBF0E3;  /* Verde claro para elementos secundarios */
+  --green-color-300: #A5DFBB;  /* Verde medio claro para bordes y separadores */
+  --green-color-400: #6FCF97;  /* Tu color primario actual */
+  --green-color-500: #4BAF7C;  /* Verde más oscuro para hover */
+  --dark-green-color: #2F744E;  /* Verde oscuro para textos o énfasis */
   --bs-light-rgb: rgba(255, 255, 255, 1);
   --light-color: #FFF;
   --primary-color: #6FCF97;
@@ -160,8 +160,16 @@ strong {
 
 /* 2.2 Background Color
 /*----------------------------------------------*/
-.bg-gray-200 {
-  background-color: var(--gray-color-200);
+.bg-green-200 {
+  background-color: var(--green-color-200);
+}
+
+.bg-green-100 {
+  background-color: var(--green-color-100);
+}
+
+.bg-green-300 {
+  background-color: var(--green-color-300);
 }
 
 .bg-light {
@@ -369,9 +377,9 @@ h3 {
   color: var(--dark-color);
 }
 
-.btn.btn-outline-gray {
+.btn.btn-outline-green {
   background: transparent;
-  border-color: var(--gray-color-200);
+  border-color: var(--green-color-200);
   color: var(--dark-color);
 }
 
@@ -722,7 +730,7 @@ a.text-hover:focus:after{
 ------------------------------------------------------------- */
 #header-nav .offcanvas.show {
   z-index: 9999;
-  background-color: var(--gray-color-100);
+  background-color: var(--green-color-100);
 }
 
 .offcanvas.show .nav-item a.nav-link,
@@ -933,7 +941,7 @@ button.filter-button.active {
 ------------------------------------------------------------- */
 .counter-number h4.timer {
   font-size: 6.4em;
-  color: var(--gray-color-400);
+  color: #1E1E1E;
   transition: 0.5s ease-in-out;
 }
 
@@ -1155,23 +1163,27 @@ li {
 
 @media (max-width: 576px) {
   .logo-mbl {
-    width: 120px;
+    width: 90px;
   }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
   .logo-mbl {
-    width: 150px;
+    width: 120px;
   }
 }
 
 @media (min-width: 992px) {
   .logo-mbl {
-    width: 175px;
+    width: 150px;
   }
 }
 
 /* Ajuste del logo cuando la navbar está en modo scrolling */
 .smart-scroll.up .logo-mbl {
   transform: scale(0.9);
+}
+
+#contact p {
+  font-size: 1.2em;
 }

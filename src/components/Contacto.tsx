@@ -123,7 +123,7 @@ export default function Contacto() {
                                                 <span className="d-flex align-items-center justify-content-center rounded-circle bg-light p-2" style={{ width: 48, height: 48, minWidth: 48 }}>
                                                     <FontAwesomeIcon icon={faEnvelope} size="2xl" />
                                                 </span>
-                                                <a href="mailto:info@construccionesmbl.com" className="ms-3 text-decoration-none text-dark">info@construccionesmbl.com</a>
+                                                <a href={`mailto:info@${process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\/(www\.)?/, "") || "construccionesmbl.com"}`} className="ms-3 text-decoration-none text-dark">info@{process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\/(www\.)?/, "") || "construccionesmbl.com"}</a>
                                             </li>
                                             <li className="d-flex align-items-center mb-4">
                                                 <span className="d-flex align-items-center justify-content-center rounded-circle bg-light p-2" style={{ width: 48, height: 48, minWidth: 48 }}>

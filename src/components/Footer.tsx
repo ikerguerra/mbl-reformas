@@ -2,6 +2,9 @@ import Link from "next/link";
 import LogoMBL from "./LogoMBL";
 
 export default function Footer() {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+    const emailDomain = baseUrl.replace(/^https?:\/\/(www\.)?/, "");
+
     return (
         <footer id="footer" className="overflow-hidden padding-large bg-dark">
             <div className="container">
@@ -63,7 +66,7 @@ export default function Footer() {
                                 <li className="pb-2 light">Av. Argentina 132 (Cristasa of.221), Gijón, Asturias</li>
                                 <li className="pb-2 light">684 675 898</li>
                                 <li className="pb-2">
-                                    <Link href="mailto:info@construccionesmbl.es" className="light">info@construccionesmbl.com</Link>
+                                    <Link href={`mailto:info@${emailDomain}`} className="light">info@{emailDomain}</Link>
                                 </li>
                             </ul>
                         </div>

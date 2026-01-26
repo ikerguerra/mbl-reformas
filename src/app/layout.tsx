@@ -19,6 +19,8 @@ const oswald = Oswald({
   weight: ["300", "400", "500", "600", "700"]
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+
 export const metadata: Metadata = {
   title: {
     default: "MBL - Reformas Integrales y Construcción en Asturias",
@@ -35,12 +37,12 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "https://www.construccionesmbl.com",
+    canonical: baseUrl,
   },
   openGraph: {
     title: "MBL - Reformas Integrales y Construcción en Asturias",
     description: "Expertos en reformas integrales, baños y cocinas en Asturias. Creamos espacios sostenibles y de alta calidad.",
-    url: "https://www.construccionesmbl.com",
+    url: baseUrl,
     siteName: "MBL Construcciones",
     locale: "es_ES",
     type: "website",
@@ -63,9 +65,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "MBL Construcciones",
-    "image": "https://www.construccionesmbl.com/logoMBL.svg",
-    "@id": "https://www.construccionesmbl.com",
-    "url": "https://www.construccionesmbl.com",
+    "image": `${baseUrl}/logoMBL.svg`,
+    "@id": baseUrl,
+    "url": baseUrl,
     "telephone": "684675898",
     "address": {
       "@type": "PostalAddress",

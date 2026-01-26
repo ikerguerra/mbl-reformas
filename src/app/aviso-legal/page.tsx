@@ -1,6 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 
 export default function AvisoLegalPage() {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+    const domain = baseUrl.replace(/^https?:\/\//, "");
+
     return (
         <div className="overflow-hidden">
             <HeroSection
@@ -19,7 +22,7 @@ export default function AvisoLegalPage() {
                                 </div>
 
                                 <p className="mb-4">
-                                    El titular del sitio web <strong>www.construccionesmbl.com</strong> es{" "}
+                                    El titular del sitio web <strong>{domain}</strong> es{" "}
                                     <strong>Construcciones MBL</strong>, con domicilio en Gijón, Asturias (España).
                                 </p>
 

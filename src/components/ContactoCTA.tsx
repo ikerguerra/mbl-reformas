@@ -9,7 +9,7 @@ export default function ContactoCTA() {
         //             <div className="col-md-8">
         //                 <h3 className="light text-uppercase">¿Estás listo para comenzar un nuevo proyecto?</h3>
         //                 <p className="light mt-4">Si tienes algún proyecto en mente, contáctanos en <strong>
-        //                     <a href="mailto:info@construccionesmbl.com">info@construccionesmbl.com</a>
+        //                     <a href={`mailto:info@${process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\/(www\.)?/, "") || "construccionesmbl.com"}`}>info@{process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\/(www\.)?/, "") || "construccionesmbl.com"}</a>
         //                 </strong>
         //                 </p>
         //                 <a href="/contacto" className="btn-slide btn-medium btn-light hover-slide-right text-uppercase mt-5">

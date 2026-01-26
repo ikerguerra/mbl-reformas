@@ -113,8 +113,8 @@ export default function PoliticaCookiesPage() {
                                         </Link>
                                     </li>
                                     <li className="mb-2">• Contactar con nosotros en{" "}
-                                        <a href="mailto:info@construccionesmbl.com" className="text-primary text-decoration-underline">
-                                            info@construccionesmbl.com
+                                        <a href={`mailto:info@${process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\/(www\.)?/, "") || "construccionesmbl.com"}`} className="text-primary text-decoration-underline">
+                                            info@{process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\/(www\.)?/, "") || "construccionesmbl.com"}
                                         </a>
                                     </li>
                                 </ul>

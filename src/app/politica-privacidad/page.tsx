@@ -2,6 +2,9 @@ import HeroSection from "@/components/HeroSection";
 import Link from "next/link";
 
 export default function PoliticaPrivacidadPage() {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+    const domain = baseUrl.replace(/^https?:\/\//, "");
+
     return (
         <div className="overflow-hidden">
             <HeroSection
@@ -18,7 +21,7 @@ export default function PoliticaPrivacidadPage() {
                                 <p className="mb-4">
                                     En <strong>Construcciones MBL</strong>, en cumplimiento del Reglamento (UE) 2016/679
                                     (RGPD), la Ley Orgánica 3/2018 (LOPDGDD) y la Ley 34/2002 (LSSI-CE),
-                                    informamos a los usuarios del sitio web <strong>www.construccionesmbl.com</strong> sobre
+                                    informamos a los usuarios del sitio web <strong>{domain}</strong> sobre
                                     el tratamiento de los datos personales recabados durante la navegación o el uso de nuestros formularios de contacto.
                                 </p>
 

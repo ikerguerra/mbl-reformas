@@ -1,21 +1,23 @@
 import { Organization, WithContext } from 'schema-dts';
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+
 export const organizationSchema: WithContext<Organization> = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  "@id": "https://www.construccionesmbl.com/#organization",
+  "@id": `${baseUrl}/#organization`,
   "name": "MBL Construcciones",
-  "url": "https://www.construccionesmbl.com",
+  "url": baseUrl,
   "logo": {
     "@type": "ImageObject",
-    "url": "https://www.construccionesmbl.com/assets/LogoMBL-Light.svg",
+    "url": `${baseUrl}/assets/LogoMBL-Light.svg`,
     "width": "180",
     "height": "60"
   },
   "image": [
-    "https://www.construccionesmbl.com/assets/hero-reformas-integrales.jpg",
-    "https://www.construccionesmbl.com/assets/hero-reformas-banos.jpg",
-    "https://www.construccionesmbl.com/assets/hero-reformas-cocinas.jpg"
+    `${baseUrl}/assets/hero-reformas-integrales.jpg`,
+    `${baseUrl}/assets/hero-reformas-banos.jpg`,
+    `${baseUrl}/assets/hero-reformas-cocinas.jpg`
   ],
   "description": "Empresa líder en reformas integrales en Asturias. Especialistas en reformas de baños, cocinas, locales comerciales y reformas integrales con más de 15 años de experiencia.",
   "address": {

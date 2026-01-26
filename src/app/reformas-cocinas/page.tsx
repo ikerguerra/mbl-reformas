@@ -2,6 +2,12 @@ import FAQs from "@/components/FAQs";
 import HeroSection from "@/components/HeroSection";
 import Nosotros from "@/components/NosotrosCTA";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Reformas de Cocinas en Asturias | Diseños Exclusivos",
+    description: "Expertos en reformas de cocinas en Asturias. Creamos espacios funcionales y modernos adaptados a tus necesidades. Pide tu presupuesto personalizado.",
+};
 
 export default function ReformasCocinasPage() {
 
@@ -35,10 +41,11 @@ export default function ReformasCocinasPage() {
     return (
         <div className="overflow-hidden">
             <HeroSection
-                title="Cocinas"
-                breadcrumb="/ Cocinas"
+                title="Reformas de Cocinas en Asturias"
+                breadcrumb="/ Reformas de Cocinas"
                 backgroundImage="/assets/hero-reformas-cocinas.jpg"
             />
+
 
             <div className="post-wrap py-5 no-padding-bottom">
                 <div className="container">

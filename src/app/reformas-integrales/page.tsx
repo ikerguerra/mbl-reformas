@@ -2,6 +2,12 @@ import FAQs from "@/components/FAQs";
 import HeroSection from "@/components/HeroSection";
 import Nosotros from "@/components/NosotrosCTA";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Reformas Integrales en Asturias | Empresa de Construcción",
+    description: "Realizamos reformas integrales de viviendas y locales en Asturias. Gestión completa del proyecto, desde el diseño hasta la ejecución final. Calidad garantizada.",
+};
 
 export default function ReformasIntegralesPage() {
 
@@ -31,8 +37,8 @@ export default function ReformasIntegralesPage() {
     return (
         <div className="overflow-hidden">
             <HeroSection
-                title="Integrales"
-                breadcrumb="/ Integrales"
+                title="Reformas Integrales en Asturias"
+                breadcrumb="/ Reformas Integrales"
                 backgroundImage="/assets/hero-reformas-integrales.jpg"
             />
 
@@ -43,7 +49,7 @@ export default function ReformasIntegralesPage() {
                             <div className="col-md-8" data-aos="fade-right">
                                 <div className="section-header mb-3 d-flex flex-column">
                                     <h2 className="text-uppercase mb-3 left-pattern">Transforma tu hogar sin complicaciones</h2>
-                                    <h3 className="text-uppercase mb-3">Especialistas en reformas integrales </h3>
+                                    <h3 className="text-uppercase mb-3">Especialistas en reformas integrales en Gijón, Oviedo y Avilés</h3>
                                     <ul className="inner-list list-unstyled d-flex flex-column gap-3 mt-4">
                                         <li className="font-size-li"><span className="price-tick">✓</span> Te ayudamos a optimizar cada espacio según tus necesidades.</li>
                                         <li className="font-size-li"><span className="price-tick">✓</span> Contamos con un equipo cualificado para ejecutar tu proyecto con precisión..</li>
@@ -58,7 +64,7 @@ export default function ReformasIntegralesPage() {
                                 </div>
                             </div>
                             <div className="col-md-4" data-aos="fade-left">
-                                <Image src="/assets/cocina.jpeg" alt="post-image" width={600} height={400} className="img-fluid align-right" />
+                                <Image src="/assets/cocina.jpeg" alt="Ejemplo de reforma integral de cocina en Asturias" width={600} height={400} className="img-fluid align-right" />
                             </div>
                         </div>
                     </article>

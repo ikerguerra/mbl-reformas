@@ -2,6 +2,12 @@ import FAQs from "@/components/FAQs";
 import HeroSection from "@/components/HeroSection";
 import Nosotros from "@/components/NosotrosCTA";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Reformas de Baños en Asturias | Diseños Modernos y Funcionales",
+    description: "Especialistas en reformas de baños en Asturias. Cambio de bañera por ducha, renovación de sanitarios y azulejos. Calidad y rapidez en el servicio.",
+};
 
 export default function ReformasBanosPage() {
 
@@ -31,8 +37,8 @@ export default function ReformasBanosPage() {
     return (
         <div className="overflow-hidden">
             <HeroSection
-                title="Baños"
-                breadcrumb="/ Baños"
+                title="Reformas de Baños en Asturias"
+                breadcrumb="/ Reformas de Baños"
                 backgroundImage="/assets/hero-reformas-banos.jpeg"
             />
 
@@ -43,7 +49,7 @@ export default function ReformasBanosPage() {
                             <div className="col-md-8" data-aos="fade-right">
                                 <div className="section-header mb-3 d-flex flex-column">
                                     <h2 className="text-uppercase mb-3 left-pattern">TU BAÑO, TU ESPACIO</h2>
-                                    <h3 className="text-uppercase mb-3">¿Imaginas un baño hecho a tu medida?</h3>
+                                    <h3 className="text-uppercase mb-3">Expertos en diseño y reforma de baños a medida</h3>
                                     <ul className="inner-list list-unstyled d-flex flex-column gap-3 mt-4">
                                         <li className="font-size-li"><span className="price-tick">✓</span> Te guiamos para que el diseño final refleje tu estilo.</li>
                                         <li className="font-size-li"><span className="price-tick">✓</span> Cuidamos los detalles porque creemos que en un buen baño, todo suma.</li>
@@ -58,7 +64,7 @@ export default function ReformasBanosPage() {
                                 </div>
                             </div>
                             <div className="col-md-4" data-aos="fade-left">
-                                <Image src="/assets/banio.jpeg" alt="post-image" width={600} height={400} className="img-fluid align-right" />
+                                <Image src="/assets/banio.jpeg" alt="Reforma de baño moderno en Asturias con acabados de alta calidad" width={600} height={400} className="img-fluid align-right" />
                             </div>
                         </div>
                     </article>

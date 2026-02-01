@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 
 export default function AvisoLegalPage() {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://construccionesmbl.vercel.app";
     const domain = baseUrl.replace(/^https?:\/\//, "");
 
     return (

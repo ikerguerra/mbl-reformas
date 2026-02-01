@@ -2,7 +2,7 @@ import Link from "next/link";
 import LogoMBL from "./LogoMBL";
 
 export default function Footer() {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://construccionesmbl.vercel.app";
     const emailDomain = baseUrl.replace(/^https?:\/\/(www\.)?/, "");
 
     return (

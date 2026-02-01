@@ -1,30 +1,30 @@
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://construccionesmbl.vercel.app";
 
 export const defaultSEOConfig = {
-  defaultTitle: "MBL Construcciones - Reformas Integrales en Gijón y Asturias | Expertos en Reformas",
-  titleTemplate: "%s | MBL Construcciones Gijón - Profesionales en Reformas",
+  defaultTitle: "Construcciones MBL - Reformas Integrales en Gijón y Asturias | Expertos en Reformas",
+  titleTemplate: "%s | Construcciones MBL Gijón - Profesionales en Reformas",
   description: "✓Más de 15 años de experiencia ✓Presupuesto sin compromiso ✓Reformas integrales, baños, cocinas y locales comerciales en Gijón y toda Asturias. Calidad, compromiso y garantía en cada proyecto.",
   canonical: baseUrl,
   openGraph: {
     type: "website",
     locale: "es_ES",
     url: baseUrl,
-    siteName: "MBL Construcciones",
-    title: "MBL Construcciones - Expertos en Reformas en Asturias",
+    siteName: "Construcciones MBL",
+    title: "Construcciones MBL - Expertos en Reformas en Asturias",
     description: "Empresa líder en reformas integrales en Asturias. Más de 15 años transformando espacios con calidad y profesionalidad.",
     images: [
       {
         url: `${baseUrl}/assets/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "MBL Construcciones - Reformas en Asturias",
+        alt: "Construcciones MBL - Reformas en Asturias",
       }
     ]
   },
   additionalMetaTags: [
     {
       name: "author",
-      content: "MBL Construcciones"
+      content: "Construcciones MBL"
     },
     {
       name: "viewport",

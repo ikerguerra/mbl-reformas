@@ -1,12 +1,12 @@
 import { Organization, WithContext } from 'schema-dts';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://construccionesmbl.vercel.app";
 
 export const organizationSchema: WithContext<Organization> = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
   "@id": `${baseUrl}/#organization`,
-  "name": "MBL Construcciones",
+  "name": "Construcciones MBL",
   "url": baseUrl,
   "logo": {
     "@type": "ImageObject",

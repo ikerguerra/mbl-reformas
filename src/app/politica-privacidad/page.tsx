@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import Link from "next/link";
 
 export default function PoliticaPrivacidadPage() {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://construccionesmbl.vercel.app";
     const domain = baseUrl.replace(/^https?:\/\//, "");
 
     return (

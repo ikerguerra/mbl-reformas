@@ -19,18 +19,18 @@ const oswald = Oswald({
   weight: ["300", "400", "500", "600", "700"]
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.construccionesmbl.com";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://construccionesmbl.vercel.app";
 
 export const metadata: Metadata = {
   title: {
     default: "MBL - Reformas Integrales y Construcción en Asturias",
-    template: "%s | MBL Construcciones"
+    template: "%s | Construcciones MBL"
   },
   description: "Empresa de reformas integrales, cocinas y baños en Gijón, Oviedo y Avilés. Calidad, compromiso y sostenibilidad en cada proyecto de construcción.",
   keywords: ["reformas integrales asturias", "reformas gijón", "reformas baños asturias", "reformas cocinas asturias", "construcción asturias"],
-  authors: [{ name: "MBL Construcciones" }],
-  creator: "MBL Construcciones",
-  publisher: "MBL Construcciones",
+  authors: [{ name: "Construcciones MBL" }],
+  creator: "Construcciones MBL",
+  publisher: "Construcciones MBL",
   formatDetection: {
     email: false,
     address: false,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "MBL - Reformas Integrales y Construcción en Asturias",
     description: "Expertos en reformas integrales, baños y cocinas en Asturias. Creamos espacios sostenibles y de alta calidad.",
     url: baseUrl,
-    siteName: "MBL Construcciones",
+    siteName: "Construcciones MBL",
     locale: "es_ES",
     type: "website",
   },
@@ -64,7 +64,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "MBL Construcciones",
+    "name": "Construcciones MBL",
     "image": `${baseUrl}/logoMBL.svg`,
     "@id": baseUrl,
     "url": baseUrl,

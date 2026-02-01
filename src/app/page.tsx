@@ -8,6 +8,7 @@ import QuickGuide from "@/components/QuickGuide";
 import AnimatedParallax from "@/components/AnimatedParallax";
 import AOSWrapper from "../components/AOSWrapper";
 import { Metadata } from "next";
+import BudgetCalculator from "@/components/BudgetCalculator";
 
 export const metadata: Metadata = {
   title: "MBL - Reformas Integrales en Asturias | Gijón, Oviedo, Avilés",
@@ -51,6 +52,8 @@ export default function Home() {
         <Reviews />
 
         <Nosotros />
+
+        <BudgetCalculator />
       </div>
     </AOSWrapper>
   );
